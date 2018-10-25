@@ -5,8 +5,14 @@
  */
 package edu.eci.arsw.parcial2.restcontrollers;
 
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
 import edu.eci.arsw.parcial2.services.WeatherServices;
+import java.sql.SQLException;
+import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,6 +30,11 @@ public class WeatherAPIController {
     
     @Autowired
     private WeatherServices weather;
+    
+    @RequestMapping("/")
+    String index() {
+        return "index";
+    }
     
     /**
      * Solicita los datos del clima y los retorna al servicio web.
