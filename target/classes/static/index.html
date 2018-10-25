@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.0/examples/cover/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>Clima</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="js/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="js/cover.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="container">
+                <h1>Consulta del estado del clima</h1>
+                <p>Esta aplicación permite consultar el estado del clima en lugares específicos de la tierra.</p>
+            </div>
+        </header><br><br>
+        
+        <main>
+            <div class="container">
+                <h5>Ingrese el nombre de la ciudad</h5>
+                <input id="identifier" type="text" class="btn btn-lg btn-default"> <br>
+                <a type="button" class="btn btn-dark" onclick="WeatherControllerModule.getWeather($('#identifier').val())">Buscar</a>
+            </div><br>            
+            <div id="data" class="container">
+            </div>
+        </main>
+
+        
+
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>Parcial 2-ARSW By Daniela González</p>
+                <p>Repositorio de <a href="https://github.com/danielagon/Parcial2-ARSW.git">GitHub</a></p>
+            </div>
+            <div class="inner">
+              <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.2.1.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/WeatherController.js"></script>
+    <script src="js/WeatherRestController.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</body></html>
