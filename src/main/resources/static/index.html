@@ -32,7 +32,9 @@
                 <input id="identifier" type="text" class="btn btn-lg btn-default"> <br>
                 <a type="button" class="btn btn-dark" onclick="WeatherControllerModule.getWeather($('#identifier').val())">Buscar</a>
             </div><br>            
-            <div id="data" class="container">
+            <div id="data" class="container"></div>
+            <div class="container">
+                <a type="button" class="btn btn-dark" href="/map.html">Crear mapa</a>
             </div>
         </main>
 
@@ -59,6 +61,8 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/WeatherController.js"></script>
     <script src="js/WeatherRestController.js"></script>
+    <script src="js/MapController.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?client=f70fd1eb9fb8c63c6a242766f8f90670"></script>
 
 </body></html>
