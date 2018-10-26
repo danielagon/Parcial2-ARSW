@@ -10,3 +10,7 @@ La arquitectura utiliza SpringBoot para realizar las inyecciones y aceptar multi
 ### Link de Heroku 
 
 - https://parcialarsw-2.herokuapp.com/
+
+### Link de GitHub
+
+- https://github.com/danielagon/Parcial2-ARSW
